@@ -36,9 +36,7 @@ public class lesson04 {
             String input = scanner.nextLine();
 
             if (input.equalsIgnoreCase("print")) {
-                for (String str : linkedList) {
-                    System.out.println(str);
-                }
+                System.out.println(linkedList);
             } else if (input.equalsIgnoreCase("revert")) {
                 if (!linkedList.isEmpty()) {
                     linkedList.pop();
@@ -48,7 +46,9 @@ public class lesson04 {
             } else {
                 linkedList.push(input);
             }
+
         }
+
     }
 
 }
